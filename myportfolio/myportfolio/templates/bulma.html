@@ -90,7 +90,7 @@
 
 <section class="page-bg-bul" style="padding-top: 6rem; padding-bottom: 6rem;">
   <div class="container">
-    <div class="card" style="margin-left: 8em; margin-right: 8rem;">
+    <div class="card card-box-shadow" style="margin-left: 8em; margin-right: 8rem;">
       <div class="card-content">
     <div class="columns has-same-height is-gapless" >
       <div class="column is-one-quarter ">
@@ -98,36 +98,21 @@
           </tr>
           <td>
                     <!-- Profile -->
-            <figure class="image is-128x128">
+            <figure class="image-profile-me">
               <img src="{% static "img/acw-profile-pic1.png" %}" alt="my-pic">
             </figure>
           </td>
         </tr>
         </div>
+
       <div class="column">
             <div class="content">
-              <table class="table-profile">
-                <tr>
-                  <th colspan="1"></th>
-                  <th colspan="2"></th>
-                </tr>
-                <tr>
-                  <td>Name:</td>
-                  <td>Andrew Wright</td>
-                </tr>
-                <tr>
-                  <td>Profile:</td>
-                  <td>Front-end Developer</td>
-                </tr>
-                <tr>
-                  <td>Email:</td>
-                  <td>andrewcraigwright@gmail.com</td>
-                </tr>
-                <tr>
-                  <td>Phone:</td>
-                  <td>(562) 980 - 5310</td>
-                </tr>
-              </table>
+                <div class="about-me">
+                  <p><span class="skill-bold-title-bul">Name:&nbsp;</span><span>Andrew Wright</span></p>
+                  <p><span class="skill-bold-title-bul">Profile:&nbsp;</span><span>Front-end Developer</span></p>
+                  <p><span class="skill-bold-title-bul">Email:&nbsp;</span><span class="link-text-color"><a href="mailto:andrewcraigwright@gmail.com">andrewcraigwright@gmail.com</a></span></p>
+                  <p><span class="skill-bold-title-bul">Phone:&nbsp;</span><span class="link-text-color"><a href="tel:5629805310">(562) 980 - 5310</a></span></p>
+                </div>
             </div>
             <br>
           </div>
@@ -139,80 +124,267 @@
             <div class="content has-text-centered">
              <h1 class="title-about-me-bul is-uppercase">Hello World</h1>
              <p class="about-me-text-bul">Thank you for taking time to visit my portfolio! I used Bootstrap, Django and Heroku to create it.</p>
-             <p><a>See site with Bootstrap 4 instead of Bulma</a></p>
+             <p><span class="link-text-color"><a href="https://www.google.com">See site with Bootstrap 4 instead of Bulma</a></span></p>
             </div>
             <br>
           </div>
         </div>
-                <!-- Skills -->
-                <!-- background-color: #1cabb4 !important -->
-                <div class="content">
-                    <h1 class="has-text-centered is-uppercase title-about-me-bul">Skills</h1>
-                </div>
-            <div class="content">
-              <p class=" is-uppercase skill-bold-title-bul">Website Design</p>
-
-              <article class="media">
-                <div class="media-content">
-                  <div class="content about-me-text-bul">
-                    <p >
-                      HTML5 & CSS3
-                      <br>
-                      <!-- change primary to #1cabb4?  is-primary -->
-                      <progress class="progress progress-bg-bul" value="90" max="100"></progress>
-                    </p>
-                  </div>
-              </article>
-
-              <article class="media">
-                <div class="media-content">
-                  <div class="content about-me-text-bul">
-                    <p>
-                      Javascript
-                      <br>
-                      <progress class="progress progress-bg-bul" value="90" max="100"></progress>
-                    </p>
-                  </div>
-                </div>
-              </article>
-
-              <article class="media">
-                <div class="media-content">
-                  <div class="content about-me-text-bul">
-                    <p>
-                      Bootstrap & Bulma
-                      <br>
-                      <progress class="progress progress-bg-bul" value="75" max="100"></progress>
-                    </p>
-                  </div>
-                </div>
-              </article>
-
-              <article class="media">
-                <div class="media-content">
-                  <div class="content about-me-text-bul">
-                    <p>
-                      HTML5/CSS3
-                      <br>
-                      <progress class="progress progress-bg-bul" value="95" max="100"></progress>
-                    </p>
-                  </div>
-                </div>
-              </article>
-
-              <article class="media">
-                <div class="media-content">
-                  <div class="content about-me-text-bul">
-                    <p>
-                      Databases
-                      <br>
-                      <progress class="progress progress-bg-bul" value="66" max="100"></progress>
-                    </p>
-                  </div>
-                </div>
-              </article>
-            </div>
+        
+        
+          <!-- Skills -->
+          <div class="content">
+              <h1 class="has-text-centered is-uppercase title-about-me-bul">Skills</h1>
           </div>
+
+                
+          <div class="content">
+            
+            <p class="is-uppercase skill-bold-title-bul">Website Design</p>
+
+            <article class="media">
+              <div class="media-content">
+                <div class="content about-me-text-bul">
+                  <p >
+                    HTML5 & CSS3
+                    <!-- change primary to #1cabb4?  is-primary -->
+                    <progress class="progress progress-bg-bul" value="90" max="100"></progress>
+                  </p>
+                </div>
+            </article>
+
+            <article class="media">
+              <div class="media-content">
+                <div class="content about-me-text-bul">
+                  <p>
+                    Javascript
+                    <progress class="progress progress-bg-bul" value="90" max="100"></progress>
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="media">
+              <div class="media-content">
+                <div class="content about-me-text-bul">
+                  <p>
+                    Bootstrap & Bulma
+                    <progress class="progress progress-bg-bul" value="75" max="100"></progress>
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          
+          
+                    
+          <p class=" is-uppercase skill-bold-title-bul">Backend System / Database</p>
+
+          <article class="media">
+            <div class="media-content">
+              <div class="content about-me-text-bul">
+                <p >
+                  Python / Django
+                  <!-- change primary to #1cabb4?  is-primary -->
+                  <progress class="progress progress-bg-bul" value="90" max="100"></progress>
+                </p>
+              </div>
+          </article>
+
+          <article class="media">
+            <div class="media-content">
+              <div class="content about-me-text-bul">
+                <p>
+                  SQL / Postres
+                  <progress class="progress progress-bg-bul" value="90" max="100"></progress>
+                </p>
+              </div>
+            </div>
+          </article>
+
+          
+          <p class=" is-uppercase skill-bold-title-bul">Meetings / Event Registration Management</p>
+          <article class="media">
+            <div class="media-content">
+              <div class="content about-me-text-bul">
+                <p >
+                  Cvent
+                  <!-- change primary to #1cabb4?  is-primary -->
+                  <progress class="progress progress-bg-bul" value="90" max="100"></progress>
+                </p>
+              </div>
+          </article>
+
+          <article class="media">
+            <div class="media-content">
+              <div class="content about-me-text-bul">
+                <p>
+                  Aventri
+                  <progress class="progress progress-bg-bul" value="90" max="100"></progress>
+                </p>
+              </div>
+            </div>
+          </article>
+
+          
+        <p class=" is-uppercase skill-bold-title-bul">Graphic / Image & Movie Editing</p>
+
+          <article class="media">
+            <div class="media-content">
+              <div class="content about-me-text-bul">
+                <p >
+                  Adobe Photoshop
+                  <!-- change primary to #1cabb4?  is-primary -->
+                  <progress class="progress progress-bg-bul" value="90" max="100"></progress>
+                </p>
+              </div>
+          </article>
+
+          <article class="media">
+            <div class="media-content">
+              <div class="content about-me-text-bul">
+                <p>
+                  Affinity Photo
+                  <progress class="progress progress-bg-bul" value="90" max="100"></progress>
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="media">
+            <div class="media-content">
+              <div class="content about-me-text-bul">
+                <p>
+                  Gimp
+                  <progress class="progress progress-bg-bul" value="75" max="100"></progress>
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="media">
+            <div class="media-content">
+              <div class="content about-me-text-bul">
+                <p>
+                  Adobe Premier
+                  <progress class="progress progress-bg-bul" value="95" max="100"></progress>
+                </p>
+              </div>
+            </div>
+          </article>
+
+          
+          
+          <p class=" is-uppercase skill-bold-title-bul">Online / Web Marketing</p>
+
+          <article class="media">
+            <div class="media-content">
+              <div class="content about-me-text-bul">
+                <p >
+                  Salesforce / Hubspot / Agile CRM
+                  <!-- change primary to #1cabb4?  is-primary -->
+                  <progress class="progress progress-bg-bul" value="90" max="100"></progress>
+                </p>
+              </div>
+          </article>
+
+          <article class="media">
+            <div class="media-content">
+              <div class="content about-me-text-bul">
+                <p>
+                  Survey Monkey
+                  <progress class="progress progress-bg-bul" value="90" max="100"></progress>
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="media">
+            <div class="media-content">
+              <div class="content about-me-text-bul">
+                <p>
+                  MailChimp / Constant Contact
+                  <progress class="progress progress-bg-bul" value="75" max="100"></progress>
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="media">
+            <div class="media-content">
+              <div class="content about-me-text-bul">
+                <p>
+                  Prezi
+                  <progress class="progress progress-bg-bul" value="95" max="100"></progress>
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="media">
+            <div class="media-content">
+              <div class="content about-me-text-bul">
+                <p>
+                  Google Analytics / Adsense
+                  <progress class="progress progress-bg-bul" value="66" max="100"></progress>
+                </p>
+              </div>
+            </div>
+          </article>
+          
+         
+          <article class="media">
+            <div class="media-content">
+              <div class="content about-me-text-bul">
+                <p>
+                  Facebook & Instagram Ads
+                  <progress class="progress progress-bg-bul" value="66" max="100"></progress>
+                </p>
+              </div>
+            </div>
+          </article>
+          
+          
+          <article class="media">
+            <div class="media-content">
+              <div class="content about-me-text-bul">
+                <p>
+                  Bing / LinkedIn Ads
+                  <progress class="progress progress-bg-bul" value="66" max="100"></progress>
+                </p>
+              </div>
+            </div>
+          </article>
+          
+                    
+          <p class=" is-uppercase skill-bold-title-bul">Gaming & Animation</p>
+          <article class="media">
+            <div class="media-content">
+              <div class="content about-me-text-bul">
+                <p >
+                  Construct 3
+                  <!-- change primary to #1cabb4?  is-primary -->
+                  <progress class="progress progress-bg-bul" value="90" max="100"></progress>
+                </p>
+              </div>
+          </article>
+
+          <article class="media">
+            <div class="media-content">
+              <div class="content about-me-text-bul">
+                <p>
+                  Godot 3
+                  <progress class="progress progress-bg-bul" value="90" max="100"></progress>
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
       </div>
     </div>
   </div>
@@ -230,6 +402,11 @@
             class="tag is-light">ASP.NET Web Forms</span><span class="tag is-light">MSSQL</span><span class="tag is-light">MongoDB</span><span
             class="tag is-light">Apache Cordova</span><span class="tag is-light">Chrome Extensions</span>
         </div> -->
+
+
+
+
+
 
   <!-- Services -->
   <section class="section" id="services">
