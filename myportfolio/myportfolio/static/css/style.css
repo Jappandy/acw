@@ -387,3 +387,6 @@ a:active, a:focus, a:hover {
   }
 } 
 
+.header-bp {
+  padding-bottom: 2rem;
+}

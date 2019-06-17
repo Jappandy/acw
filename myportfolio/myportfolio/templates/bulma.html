@@ -22,6 +22,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css.map" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css" />
+  
+  <!-- Bulma Modals-->
+  <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
+  
 </head>
 
 <body>
@@ -52,7 +56,7 @@
         <a class="navbar-item is-uppercase" href="#portfolio">
             Portfolio
         </a>
-        <a class="navbar-item is-uppercase" is-uppercase href="#about-me">
+        <a class="navbar-item is-uppercase" href="#about-me">
             About me
         </a>
         <a class="navbar-item is-uppercase" href="#contact">
@@ -67,10 +71,10 @@
   <section class="hero is-link is-medium center-v bg-primary-bul">
     <div class="hero-body">
         <div class="container has-text-centered">
-            <div class="has-text-weight-bold hero-header-text-bul">
+            <div class="has-text-weight-bold hero-header-text-bul" style="padding-bottom: 1rem;">
              Andrew Wright
             </div>
-            <hr style="width: 45%; margin: 0 auto; border: 0; border-top-width: 1px solid rgba(0,0,0.1);">
+            <hr style="width: 35%; margin: 0 auto; border: 0; border-top-width: 1px solid rgba(0,0,0.1);">
         <div class="columns" style="padding-top: 2rem; padding-bottom:2rem;">
             <div class="column is-size-4">
                 Web Developer
@@ -88,7 +92,7 @@
   </section>
 
 
-<section class="page-bg-bul" style="padding-top: 6rem; padding-bottom: 6rem;">
+<section class="page-bg-bul" style="padding-top: 6rem; padding-bottom: 1rem;">
   <div class="container">
     <div class="card card-box-shadow" style="margin-left: 8em; margin-right: 8rem;">
       <div class="card-content">
@@ -409,47 +413,66 @@
 
 
   <!-- Services -->
-  <section class="section" id="services">
+  <br>
+  <div id="services"></div>
+  <section class="section page-bg-bul">
     <div class="section-heading">
-      <h3 class="title is-2">Services</h3>
-      <h4 class="subtitle is-5">What can I do for you?</h4>
+      <h2 class="is-size-2 has-text-centered is-uppercase title-main-bul header-bp">Services</h2>
+       <!--<hr style="width: 20%; padding-top: 0px;padding-bottom: 0px;margin-top: 30px;">-->
+        <!--<hr style="width: 45%; margin: 0 auto; border: 0; border-top-width: 1px solid rgba(0,0,0.1);">-->
     </div>
-    <div class="container">
+    <div class="container has-text-centered">
       <div class="columns">
-        <div class="column">
-          <div class="box">
+        <div class="column ">
+          <div class="box"><i class="card-service-icon fa fa-tv icon"></i>
             <div class="content">
-              <h4 class="title is-5">Front End Web Development</h4>
-              Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript and
-              Vue.js.
+              <h4 class="title card-service-header">Responsive Design</h4>
+                <p class="card-service-p-text">I mainly use the Bootstrap & Bulma frameworks to create a modern, light & responsive websites.</p>
             </div>
           </div>
         </div>
-        <div class="column">
-          <div class="box">
+        
+  
+        <div class="column as-text-centered">
+          <div class="box"><i class="card-service-icon fa fa-code icon"></i>
             <div class="content">
-              <h4 class="title is-5">Back End Web Development</h4>
-              Develop Back End application/service using Node.js or ASP .NET and SQL server or Mongo DB databases.
+              <h4 class="title card-service-header">Web Development</h4>
+                <p class="card-service-p-text">I try to keep up-to-date with all web development, but I focus on HTML5, CSS3, JS, Wordpress, Django/Python.</p>
+            </div>
+          </div>
+        </div>
+        <div class="column as-text-centered">
+          <div class="box"><i class="card-service-icon fa fa-bar-chart-o icon"></i>
+            <div class="content">
+              <h4 class="title card-service-header">Marketing</h4>
+                <p class="card-service-p-text">The website is not all for nothing. With tools like Google Analytics, you'll be able to understand your viewer's likes & trends.</p>
             </div>
           </div>
         </div>
       </div>
 
       <div class="columns">
-        <div class="column">
-          <div class="box">
+        <div class="column as-text-centered">
+          <div class="box"><i class="card-service-icon fa fa-gears icon"></i>
             <div class="content">
-              <h4 class="title is-5">Front End Web Development</h4>
-              Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript and
-              Vue.js.
+              <h4 class="title card-service-header">Automation</h4>
+                <p class="card-service-p-text">With Python and other online tools I can automate webforms, use APIs to cut down on business flow and so much more!</p>
             </div>
           </div>
         </div>
-        <div class="column">
-          <div class="box">
+                <div class="column as-text-centered">
+          <div class="box"><i class="card-service-icon fa fa-group icon"></i>
             <div class="content">
-              <h4 class="title is-5">Back End Web Development</h4>
-              Develop Back End application/service using Node.js or ASP .NET and SQL server or Mongo DB databases.
+              <h4 class="title card-service-header">Group Management</h4>
+                <p class="card-service-p-text">I've used or tested out nearly all meeting/group management software, but I specialize in both Cvent & Aventri.</p>
+            </div>
+          </div>
+        </div>
+        <div class="column as-text-centered">
+          <div class="box"><i class="card-service-icon fa fa-pie-chart icon"></i>
+            <div class="content">
+              <h4 class="title card-service-header">Analytics</h4>
+                <p class="card-service-p-text">Reports that will tell more about how your website viewers think. Group registration reports with Cvent & Aventri. </p>
             </div>
           </div>
         </div>
@@ -457,413 +480,118 @@
     </div>
   </section>
 
-  <!-- Resume -->
-  <section class="section" id="resume">
-    <div class="section-heading">
-      <h3 class="title is-2">Resume</h3>
-      <h4 class="subtitle is-5">More about my past</h4>
-      <a href="#" class="button is-link is-medium">
-        <span class="icon">
-          <i class="fas fa-file-alt"></i>
-        </span>
-        <span>Download My Resume</span>
-      </a>
-    </div>
-  </section>
 
   <!-- Portfolio -->
-  <section class="section" id="portfolio">
-    <div class="container">
-      <div class="section-heading">
-        <h3 class="title is-2">Portfolio</h3>
-        <h4 class="subtitle is-5">My latest works</h4>
+  <br>
+  <div id="portfolio"></div>
+  <section class="section page-bg-bul">
+    <div class="section-heading">
+      <h2 class="is-size-2 has-text-centered is-uppercase title-main-bul header-bp">Portfolio</h2>
+       <!--<hr style="width: 20%; padding-top: 0px;padding-bottom: 0px;margin-top: 30px;">-->
+        <!--<hr style="width: 45%; margin: 0 auto; border: 0; border-top-width: 1px solid rgba(0,0,0.1);">-->
+    </div>
+    <div class="container has-text-centered">
+      <div class="columns">
+        <div class="column ">
+        <div class="card">
+          <div class="card-image">
+            <div class="port-box">
+              <div class="modal-button" data-target="portfolio-modal-1">
+              <div class="port-img"><img src="{% static "img/jtb-meetings-events-website.png" %}" class="img-fluid"></div>
+          </div>
       </div>
-      <br>
+    </div>
+  <div class="card-content">
+    <div class="content">
+      <div class="port-content">
+          <div class="row">
+              <div class="col-sm-12 text-center">
+                  <h3>JTB USA</h3>
+                      <div class="w-more"><span class="w-category">Bootstrap 4</span></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  
+  
+<div class="column as-text-centered">
+<div class="card">
+  <div class="card-image">
+  <div class="port-box">
+              <div class="modal-button" data-target="portfolio-modal-2">
+              <div class="port-img"><img src="{% static "img/geodesic-japan-forum-website.png" %}" class="img-fluid"></div>
+          </div>
+      </div>
+  </div>
+  <div class="card-content">
 
-      <div class="container portfolio-container">
-        <div class="columns">
-          <div class="column is-4">
-            <!-- admin -->
-            <div class="card">
-              <header class="card-header">
-                <p class="card-header-title">
-                  <span>Admin <small>(Light)</small></span>
-                  <span class="is-pulled-right">
-                    <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
-                      <span class="tag is-default">v0.7.2</span>
-                    </a>
-                    <span class="tag is-default">Desktop</span>
-                    <span class="tag is-danger">WIP</span>
-                  </span>
-                </p>
-              </header>
-              <div class="card-content">
-                <figure class="image">
-                  <img src="../images/admin.png" alt="Admin template screenshot">
-                </figure>
+    <div class="content">
+              <div class="port-content">
+                  <div class="row">
+                      <div class="col-sm-12 text-center">
+                          <h3>GEODESIC FORUM</h3>
+                          <div class="w-more"><span class="w-category">WordPress</span></div>
+                      </div>
+                  </div>
               </div>
-              <footer class="card-footer">
-                <a href="templates/admin.html" class="card-footer-item">Preview</a>
-                <a href="https://github.com/dansup/bulma-templates/blob/master/templates/admin.html" class="card-footer-item">Source
-                  Code</a>
-              </footer>
-            </div>
-            <!-- cards -->
-            <div class="card">
-              <header class="card-header">
-                <p class="card-header-title">
-                  <span>Cards</span>
-                  <span class="is-pulled-right">
-                    <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
-                      <span class="tag is-default">v0.7.2</span>
-                    </a>
-                    <span class="tag is-default">Desktop</span>
-                    <span class="tag is-default">?</span>
-                  </span>
-                </p>
-              </header>
-              <div class="card-content">
-                <figure class="image">
-                  <img src="../images/cards.png" alt="Cards template screenshot">
-                </figure>
-              </div>
-              <footer class="card-footer">
-                <a href="templates/cards.html" class="card-footer-item">Preview</a>
-                <a href="https://github.com/dansup/bulma-templates/blob/master/templates/cards.html" class="card-footer-item">Source
-                  Code</a>
-              </footer>
-            </div>
-            <!-- forum -->
-            <div class="card">
-              <header class="card-header">
-                <p class="card-header-title">
-                  <span>Forum</span>
-                  <span class="is-pulled-right">
-                    <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
-                      <span class="tag is-default">v0.7.2</span>
-                    </a>
-                    <span class="tag is-default">Desktop</span>
-                    <span class="tag is-default">Mobile</span>
-                  </span>
-                </p>
-              </header>
-              <div class="card-content">
-                <figure class="image">
-                  <img src="../images/forum.png" alt="Hero template screenshot">
-                </figure>
-              </div>
-              <footer class="card-footer">
-                <a href="templates/forum.html" class="card-footer-item">Preview</a>
-                <a href="https://github.com/dansup/bulma-templates/blob/master/templates/forum.html" class="card-footer-item">Source
-                  Code</a>
-              </footer>
-            </div>
-            <!-- insta album -->
-            <div class="card">
-              <header class="card-header">
-                <p class="card-header-title">
-                  <span>InstaAlbum</span>
-                  <span class="is-pulled-right">
-                    <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
-                      <span class="tag is-default">v0.7.2</span>
-                    </a>
-                    <span class="tag is-default">Desktop</span>
-                    <span class="tag is-default">Mobile</span>
-                  </span>
-                </p>
-              </header>
-              <div class="card-content">
-                <figure class="image">
-                  <img src="../images/instaalbum.png" alt="Landing template screenshot">
-                </figure>
-              </div>
-              <footer class="card-footer">
-                <a href="templates/instaAlbum.html" class="card-footer-item">Preview</a>
-                <a href="https://github.com/dansup/bulma-templates/blob/master/templates/instaAlbum.html" class="card-footer-item">Source
-                  Code</a>
-              </footer>
-            </div>
-            <!-- landing -->
-            <div class="card">
-              <header class="card-header">
-                <p class="card-header-title">
-                  <span>Landing</span>
-                  <span class="is-pulled-right">
-                    <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
-                      <span class="tag is-default">v0.7.2</span>
-                    </a>
-                    <span class="tag is-default">Desktop</span>
-                    <span class="tag is-default">Mobile</span>
-                  </span>
-                </p>
-              </header>
-              <div class="card-content">
-                <figure class="image">
-                  <img src="../images/landing.png" alt="Landing template screenshot">
-                </figure>
-              </div>
-              <footer class="card-footer">
-                <a href="templates/landing.html" class="card-footer-item">Preview</a>
-                <a href="https://github.com/dansup/bulma-templates/blob/master/templates/landing.html" class="card-footer-item">Source
-                  Code</a>
-              </footer>
-            </div>
-
           </div>
-          <div class="column is-4">
-            <!-- band -->
-            <div class="card">
-              <header class="card-header">
-                <p class="card-header-title">
-                  <span>Band</span>
-                  <span class="is-pulled-right">
-                    <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
-                      <span class="tag is-default">v0.7.2</span>
-                    </a>
-                    <span class="tag is-default">Desktop</span>
-                    <span class="tag is-default">?</span>
-                  </span>
-                </p>
-              </header>
-              <div class="card-content">
-                <figure class="image">
-                  <img src="../images/band.png" alt="Band template screenshot">
-                </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+      <div class="columns">
+        <div class="column ">
+<div class="card">
+  <div class="card-image">
+    <div class="port-box">
+              <div class="modal-button" data-target="portfolio-modal-3">
+              <div class="port-img"><img src="{% static "img/eastflatsfilm-website.png" %}" class="img-fluid"></div>
+          </div>
+      </div>
+  </div>
+  <div class="card-content">
+    <div class="content">
+                    <div class="port-content">
+                  <div class="row">
+                      <div class="col-sm-12 text-center">
+                          <h3>EAST FLATS FILM</h3>
+                          <div class="w-more"><span class="w-category">WordPress</span></div>
+                      </div>
+                  </div>
               </div>
-              <footer class="card-footer">
-                <a href="templates/band.html" class="card-footer-item">Preview</a>
-                <a href="https://github.com/dansup/bulma-templates/blob/master/templates/band.html" class="card-footer-item">Source
-                  Code</a>
-              </footer>
-            </div>
-            <!-- cheatsheet -->
-            <div class="card">
-              <header class="card-header">
-                <p class="card-header-title">
-                  <span>Cheatsheet</span>
-                  <span class="is-pulled-right">
-                    <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
-                      <span class="tag is-default">v0.7.2</span>
-                    </a>
-                    <span class="tag is-default">Desktop</span>
-                    <span class="tag is-default">?</span>
-                  </span>
-                </p>
-              </header>
-              <div class="card-content">
-                <figure class="image">
-                  <img src="https://dummyimage.com/555x255/000/fff" alt="Cheatsheet template screenshot">
-                </figure>
-              </div>
-              <footer class="card-footer">
-                <a href="templates/cheatsheet.html" class="card-footer-item">Preview</a>
-                <a href="https://github.com/dansup/bulma-templates/blob/master/templates/cheatsheet.html" class="card-footer-item">Source
-                  Code</a>
-              </footer>
-            </div>
-            <!-- hero -->
-            <div class="card">
-              <header class="card-header">
-                <p class="card-header-title">
-                  <span>Hero</span>
-                  <span class="is-pulled-right">
-                    <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
-                      <span class="tag is-default">v0.7.2</span>
-                    </a>
-                    <span class="tag is-default">Desktop</span>
-                    <span class="tag is-default">?</span>
-                  </span>
-                </p>
-              </header>
-              <div class="card-content">
-                <figure class="image">
-                  <img src="../images/hero.png" alt="Hero template screenshot">
-                </figure>
-              </div>
-              <footer class="card-footer">
-                <a href="templates/hero.html" class="card-footer-item">Preview</a>
-                <a href="https://github.com/dansup/bulma-templates/blob/master/templates/hero.html" class="card-footer-item">Source
-                  Code</a>
-              </footer>
-            </div>
-            <!--kanban -->
-            <div class="card">
-              <header class="card-header">
-                <p class="card-header-title">
-                  <span>Kanban</span>
-                  <span class="is-pulled-right">
-                    <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
-                      <span class="tag is-default">v0.7.2</span>
-                    </a>
-                    <span class="tag is-default">Desktop</span>
-                    <span class="tag is-default">?</span>
-                  </span>
-                </p>
-              </header>
-              <div class="card-content">
-                <figure class="image">
-                  <img src="../images/kanban.png" alt="Kanban template screenshot">
-                </figure>
-              </div>
-              <footer class="card-footer">
-                <a href="templates/kanban.html" class="card-footer-item">Preview</a>
-                <a href="https://github.com/dansup/bulma-templates/blob/master/templates/kanban.html" class="card-footer-item">Source
-                  Code</a>
-              </footer>
-            </div>
-            <!-- login -->
-            <div class="card">
-              <header class="card-header">
-                <p class="card-header-title">
-                  <span>Login</span>
-                  <span class="is-pulled-right">
-                    <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
-                      <span class="tag is-default">v0.7.2</span>
-                    </a>
-                    <span class="tag is-default">Desktop</span>
-                    <span class="tag is-default">Mobile</span>
-                  </span>
-                </p>
-              </header>
-              <div class="card-content">
-                <figure class="image">
-                  <img src="../images/login.png" alt="Login template screenshot">
-                </figure>
-              </div>
-              <footer class="card-footer">
-                <a href="templates/login.html" class="card-footer-item">Preview</a>
-                <a href="https://github.com/dansup/bulma-templates/blob/master/templates/login.html" class="card-footer-item">Source
-                  Code</a>
-              </footer>
+          </div>
+      </div>
+  </div>
+</div>
+        
+  
+<div class="column as-text-centered">
+<div class="card">
+  <div class="card-image">
+      <div class="port-box">
+              <div class="modal-button" data-target="portfolio-modal-4">
+              <div class="port-img"><img src="{% static "img/usa-eagles-tours-website.png" %}" class="img-fluid"></div>
+          </div>
+      </div>
+  </div>
+  <div class="card-content">
+    <div class="content">
+            <div class="port-content">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <h3>USA EAGLES TOURS</h3>
+                        <div class="w-more"><span class="w-category">WordPress</span></div>
+                    </div>
+                </div>
             </div>
           </div>
-          <div class="column is-4">
-            <!-- blog -->
-            <div class="card">
-              <header class="card-header">
-                <p class="card-header-title">
-                  <span>Blog</span>
-                  <span class="is-pulled-right">
-                    <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
-                      <span class="tag is-default">v0.7.2</span>
-                    </a>
-                    <span class="tag is-default">Desktop</span>
-                    <span class="tag is-danger">WIP</span>
-                  </span>
-                </p>
-              </header>
-              <div class="card-content">
-                <figure class="image">
-                  <img src="../images/blog.png" alt="Blog template screenshot">
-                </figure>
-              </div>
-              <footer class="card-footer">
-                <a href="templates/blog.html" class="card-footer-item">Preview</a>
-                <a href="https://github.com/dansup/bulma-templates/blob/master/templates/blog.html" class="card-footer-item">Source
-                  Code</a>
-              </footer>
-            </div>
-            <!-- cover -->
-            <div class="card">
-              <header class="card-header">
-                <p class="card-header-title">
-                  <span>Cover</span>
-                  <span class="is-pulled-right">
-                    <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
-                      <span class="tag is-default">v0.7.2</span>
-                    </a>
-                    <span class="tag is-default">Desktop</span>
-                    <span class="tag is-default">Mobile</span>
-                  </span>
-                </p>
-              </header>
-              <div class="card-content">
-                <figure class="image">
-                  <img src="../images/cover.png" alt="Cover template screenshot">
-                </figure>
-              </div>
-              <footer class="card-footer">
-                <a href="templates/cover.html" class="card-footer-item">Preview</a>
-                <a href="https://github.com/dansup/bulma-templates/blob/master/templates/cover.html" class="card-footer-item">Source
-                  Code</a>
-              </footer>
-            </div>
-            <!--inbox -->
-            <div class="card">
-              <header class="card-header">
-                <p class="card-header-title">
-                  <span>Inbox</span>
-                  <span class="is-pulled-right">
-                    <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
-                      <span class="tag is-default">v0.7.2</span>
-                    </a>
-                    <span class="tag is-default">Desktop</span>
-                    <span class="tag is-default">Mobile</span>
-                  </span>
-                </p>
-              </header>
-              <div class="card-content">
-                <figure class="image">
-                  <img src="../images/inbox.png" alt="Inbox template screenshot">
-                </figure>
-              </div>
-              <footer class="card-footer">
-                <a href="templates/inbox.html" class="card-footer-item">Preview</a>
-                <a href="https://github.com/dansup/bulma-templates/blob/master/templates/inbox.html" class="card-footer-item">Source
-                  Code</a>
-              </footer>
-            </div>
-            <!--kanban with functional search-->
-            <div class="card">
-              <header class="card-header">
-                <p class="card-header-title">
-                  <span>Kanban with Search box</span>
-                  <span class="is-pulled-right">
-                    <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
-                      <span class="tag is-default">v0.7.2</span>
-                    </a>
-                    <span class="tag is-default">Desktop</span>
-                    <span class="tag is-default">?</span>
-                  </span>
-                </p>
-              </header>
-              <div class="card-content">
-                <figure class="image">
-                  <img src="../images/kanban2.png" alt="Kanban template screenshot">
-                </figure>
-              </div>
-              <footer class="card-footer">
-                <a href="templates/kanban[search].html" class="card-footer-item">Preview</a>
-                <a href="https://github.com/dansup/bulma-templates/blob/master/templates/kanban[search].html" class="card-footer-item">Source
-                  Code</a>
-              </footer>
-            </div>
-            <!--tabs-->
-            <div class="card">
-              <header class="card-header">
-                <p class="card-header-title">
-                  <span>Modal Cards</span>
-                  <span class="is-pulled-right">
-                    <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
-                      <span class="tag is-default">v0.7.2</span>
-                    </a>
-                    <span class="tag is-default">Desktop</span>
-                    <span class="tag is-default">?</span>
-                  </span>
-                </p>
-              </header>
-              <div class="card-content">
-                <figure class="image">
-                  <img src="https://dummyimage.com/555x255/000/fff" alt="modal-cards template screenshot">
-                </figure>
-              </div>
-              <footer class="card-footer">
-                <a href="templates/modal-cards.html" class="card-footer-item">Preview</a>
-                <a href="https://github.com/dansup/bulma-templates/blob/master/templates/modal-cards.html" class="card-footer-item">Source
-                  Code</a>
-              </footer>
-            </div>
-          </div>
+        </div>
+        </div>
         </div>
       </div>
     </div>
@@ -900,82 +628,250 @@
   </section> -->
 
   <!-- About -->
-  <section class="section" id="about" style="padding-top: 25px;background-color: #f5f5f5;padding-bottom: 0px;">
-    <!-- Title -->
-    <div class="section-heading">
-      <h3 class="title is-2">About Me</h3>
-      <h4 class="subtitle is-5">Jack of all trades, master of "some"</h4>
-      <div class="container">
-        <p>Web developer with more than <strong>4 years</strong> of well-rounded experience with a degree in the
-          field of
-          <strong>Computer Science</strong>, extensive knowledge of modern Web techniques and love for <strong>Coffee</strong>.
-          Looking for an opportunity to work and upgrade, as well as being involved in an organization that
-          believes
-          in gaining a competitive edge and giving back to the community.</p>
-      </div>
-    </div>
-    
-  <!-- Contact -->
-  <section class="section" id="contact">
-    <div class="container">
-      <div class="section-heading">
-        <h3 class="title is-2">Contact</h3>
-        <h4 class="subtitle is-5">Get in touch</h4>
-      </div>
-      <br>
-
-      <div class="columns">
-        <div class="column is-6 is-offset-3">
-          <div class="box">
-            <div class="field">
-              <label class="label">Name</label>
-              <div class="control">
-                <input class="input" type="text" placeholder="Text input">
-              </div>
+  <br>
+  <div id="about-me"></div>
+  <section class="page-bg-bul">  
+  <div class="bulma-features-blue">
+        <div class="container" style="padding-top: 25px;">
+            <!-- Start: Intro -->
+            <div class="intro"></div>
+            <!-- End: Intro -->
+            <!-- Start: Intro -->
+            <div class="intro">
+                <h1 class="is-size-2 has-text-centered is-uppercase title-about-bul header-bp">MORE&nbsp;ABOUT ME</h1>
+                <p class="has-text-centered">If you haven't had enough of me then here is a little bit more...</p>
             </div>
-
-            <div class="field">
-              <label class="label">Email</label>
-              <div class="control has-icons-left">
-                <input class="input" type="email" placeholder="Email input" value="">
-                <span class="icon is-small is-left">
-                  <i class="fas fa-envelope"></i>
-                </span>
-              </div>
+            <!-- End: Intro -->
+            <!-- Start: Features -->
+            <div class="columns">
+                <div class="column item" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="100" data-aos-once="true"><i class="fa fa-gamepad icon"></i>
+                    <h3 class="name">Video Games</h3>
+                    <p class="description">I've had a game controller in my hands from as long as I can remember.</p>
+                </div>
+                <div class="column item" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="300" data-aos-once="true"><i class="fa fa-clock-o icon"></i>
+                    <h3 class="name">Time&nbsp;</h3>
+                    <p class="description">If I could have any super power it would be able to control time!&nbsp;</p>
+                </div>
+                <div class="column item" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="500" data-aos-once="true"><i class="fa fa-location-arrow icon"></i>
+                    <h3 class="name">GPS</h3>
+                    <p class="description">I'm really bad with directions. If I didn't have GPS, I think I'd be lost driving now...</p>
+                </div>
+                </div>
+            <div class="columns">    
+                <div class="column item" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="700" data-aos-once="true"><i class="fa fa-tint icon"></i>
+                    <h3 class="name">Give Blood</h3>
+                    <p class="description">It is a simple way to give back to others and the cookies and juice is always a plus!</p>
+                </div>
+                <div class="column item" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="900" data-aos-once="true"><i class="fa fa-plane icon"></i>
+                    <h3 class="name">Travel</h3>
+                    <p class="description">Through my work I've been able see such beautiful places from around the world.</p>
+                </div>
+                <div class="column item" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="1100" data-aos-once="true"><i class="fa fa-battery-quarter icon"></i>
+                    <h3 class="name">Battery Life</h3>
+                    <p class="description">Nothing scares like the low battery life icon. Well.Sharks! Sharks are really scary!</p>
+                </div>
             </div>
-
-            <div class="field">
-              <label class="label">Message</label>
-              <div class="control">
-                <textarea class="textarea" placeholder="Textarea"></textarea>
-              </div>
-            </div>
-
-            <div class="field is-grouped has-text-centered">
-              <div class="control">
-                <button class="button is-link is-large"><span class="icon">
-                    <i class="fas fa-envelope"></i>
-                  </span>
-                  <span>Submit</span></button>
-              </div>
-            </div>
-          </div>
+            <!-- End: Features -->
         </div>
-      </div>
+    </div> 
+    </section>
+    
+    
+    
+    <!-- Resume -->
+  <!--<section class="section" id="resume">-->
+  <!--  <div class="section-heading">-->
+  <!--    <h3 class="title is-2">Resume</h3>-->
+  <!--    <h4 class="subtitle is-5">More about my past</h4>-->
+  <!--    <a href="#" class="button is-link is-medium">-->
+  <!--      <span class="icon">-->
+  <!--        <i class="fas fa-file-alt"></i>-->
+  <!--      </span>-->
+  <!--      <span>Download My Resume</span>-->
+  <!--    </a>-->
+  <!--  </div>-->
+  <!--</section>-->
+  
+    
+    
+    
+     <!-- Contact Me -->
 
-    </div>
-  </section>
+      <br>
+      <div id="contact"></div>
+      <section>
+        <div class="container" style="padding-top: 3rem; padding-bottom: 3rem;">
+            <h2 class="is-size-2 has-text-centered is-uppercase title-main-bul header-bp">Contact Me</h2> 
+            <!--<hr class="mb-5" style="width: 20%;">-->
+            <div class="columns">
+              <div class="column">
+                <div class="field">
+                  <div class="control">
+                    <input class="input" type="text" placeholder="Name">
+                    </div>
+                    </div>
+                    <div class="field">
+                      <div class="control">
+                        <input class="input" type="email" placeholder="Email Address">
+                        </div>
+                        </div>
+                    <div class="field">
+                  <div class="control">
+                  <input class="input" type="text" placeholder="Phone Number">
+                  </div>
+                  </div>
+                  <div class="field">
+                    <div class="control">
+                      <textarea class="textarea" placeholder="Message"></textarea>
+                                </div>
+                      </div>
+                      <div class="control">
+                <button class="button is-primary is-large"><span class="icon">
+                    <i class="fas fa fa-envelope"></i>
+                  </span>
+                  <span>Send</span></button>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
   <!-- Footer -->
-  <footer class="footer">
-    <div class="section-heading">
-      <p>
-        <strong>Bulma Personal Template</strong> by <a href="https://www.google.com">Muhammad Ubaid Raza</a>. The
-        source code is licensed
-        <a href="https://www.google.com">SUP</a>.
-      </p>
+  <footer class="footer text-center footer-bulma" style="background-color: #2c3e50;">
+    <div class="container">
+        <div class="columns">
+            <div class="column">
+                <h4 class="text-uppercase mb-4">Location</h4>
+                <p>Los Angeles, California</p>
+            </div>
+            <div class="column">
+                <h4 class="text-uppercase">INTERNET PLACES</h4>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="https://www.linkedin.com/in/andrew-wright-4b841014/" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a></li>
+                    <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="https://github.com/Jappandy" target="_blank"><i class="fa fa-github fa-fw"></i></a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h4 class="text-uppercase mb-4">MADE WITH BOOTSTRAP 4</h4>
+                <p class="lead mb-0"><span><a href="https://bulma.io/" >See how this site looks with Bulma!</a></span></p>
+            </div>
+        </div>
     </div>
-  </footer>
+</footer>
+  
+  
+    <div class="copyright text-white has-text-centered">
+        <div class="container"><small>ACW 2019</small></div>
+    </div> 
+    
+
+  
+  
+  
+  <!-- Modals -->
+    <div class="modal modal-full-screen modal-fx-fadeInScale text-center" id="portfolio-modal-1">
+          <div class="modal-content modal-card">
+              <header class="modal-card-head has-text-centered">
+                <h2 class="text-uppercase text-secondary modal-card-title">JTB USA</h2>
+                <button class="modal-button-close is-large delete" aria-label="close"></button>
+                </header>
+                <section class="modal-card-body">
+                      <div class="columns">
+                          <div class="column">
+                            <div class="container has-text-centered">
+                              <img class="img-fluid mb-5" src="{% static "img/jtbusa-meetingsevents-monitor.png" %}">
+                              <p class="mb-5"><strong>WEB CREATION &amp; DESIGN</strong><br>&nbsp;HTML5, CSS3, JS &nbsp;(Bootstrap 4 Framework)<br><br><strong>MARKETING</strong>&nbsp;<br>&nbsp;Google Adwords &amp; AdSense, LinkedIn Ads, Facebook ads.&nbsp;<br><br><strong>OTHER ADD-ONS</strong>&nbsp;&nbsp;<br>&nbsp;Online
+                                  Agent Message Chat Box<br>Online Forms to connect to API / Email<br><br><strong>REPORTS / ANALYTICS</strong>&nbsp;&nbsp;<br>&nbsp;Google Analytics<br><br><br><a href="https://www.jtbusa.com/meetings-events" target="_blank">JTB USA | Meetings &amp; Events</a></p>
+                          </div>
+                      </div>
+                  </div>
+              </section>
+              <footer class="modal-card-foot">
+        
+              </footer>
+          </div>
+      </div>
+      
+      
+      <div class="modal modal-full-screen modal-fx-fadeInScale text-center" id="portfolio-modal-2">
+            <div class="modal-content modal-card">
+                <header class="modal-card-head has-text-centered">
+                  <h2 class="text-uppercase text-secondary modal-card-title">GEODESIC JAPAN FORUM</h2>
+                  <button class="modal-button-close is-large delete" aria-label="close"></button>
+                  </header>
+                  <section class="modal-card-body">
+                        <div class="columns">
+                            <div class="column">
+                              <div class="container has-text-centered">
+                                <img class="img-fluid mb-5" src="{% static "img/geodesic-japan-forum-monitor.png" %}">
+                                <p class="mb-5"><span></span>&nbsp;<strong>WEB CREATION &amp; DESIGN</strong><br>&nbsp;HTML5, CSS, JS &nbsp;(WordPress Framework)<br><br><strong>OTHER ADD-ONS</strong>&nbsp;&nbsp;<br>Online Forms to connect to API / Email<br><br><strong>REPORTS / ANALYTICS</strong>&nbsp;&nbsp;<br>&nbsp;Google
+                                    Analytics<br><br><br><a href="http://geodesicjapanforum2019.com/" target="_blank">Geodesic Japan Forum (2019)</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <footer class="modal-card-foot">
+          
+                </footer>
+            </div>
+        </div>
+        
+        
+      <div class="modal modal-full-screen modal-fx-fadeInScale text-center" id="portfolio-modal-3">
+            <div class="modal-content modal-card">
+                <header class="modal-card-head has-text-centered">
+                  <h2 class="text-uppercase text-secondary modal-card-title">EAST FLATS FILM</h2>
+                  <button class="modal-button-close is-large delete" aria-label="close"></button>
+                  </header>
+                  <section class="modal-card-body">
+                        <div class="columns">
+                            <div class="column">
+                              <div class="container has-text-centered">
+                                <img class="img-fluid mb-5" src="{% static "img/eastflatsfilm-doritos-monitor.png" %}">
+                                <p class="mb-5"><strong>WEB CREATION &amp; DESIGN</strong><br>&nbsp;HTML5, CSS3, JS &nbsp;(WordPress Framework)<br><br><strong>MARKETING</strong>&nbsp;<br>&nbsp;Google Adwords &amp; AdSense, LinkedIn Ads, Facebook ads.&nbsp;<br><br><strong>OTHER ADD-ONS</strong>&nbsp;&nbsp;<br>Online
+                                    Forms to connect to CRM's API / Email<br><br><strong>REPORTS / ANALYTICS</strong>&nbsp;&nbsp;<br>&nbsp;Google Analytics<br><br><br><a href="https://eastflatsfilm.com/" target="_blank">East Flats Film</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <footer class="modal-card-foot">
+                </footer>
+            </div>
+        </div>
+        
+        
+      <div class="modal modal-full-screen modal-fx-fadeInScale text-center" id="portfolio-modal-4">
+          <div class="modal-content modal-card">
+            <header class="modal-card-head has-text-centered">
+                <h2 class="text-uppercase text-secondary modal-card-title">USA EAGLES TOURS RUGBY</h2>
+                <button class="modal-button-close is-large delete" aria-label="close"></button>
+              </header>
+            <section class="modal-card-body">
+                <div class="columns">
+                    <div class="column">
+                        <div class="container has-text-centered">
+                          <img class="img-fluid mb-5" src="{% static "img/usaeaglestours-rugby-monitor.png" %}">
+                                <p class="mb-5"><strong>WEB CREATION &amp; DESIGN</strong><br>&nbsp;HTML5, CSS3, JS &nbsp;(WordPress Framework)<br><br><strong>OTHER ADD-ONS</strong>&nbsp;&nbsp;<br>Online Forms to connect to API / Email<br><br><strong>MEASURE/REPORTS/ANALYTICS</strong>&nbsp;&nbsp;<br>&nbsp;Google
+                                    Analytics<br><br><br><a href="http://usaeaglestours.info/" target="_blank">USA Eagles Tours | Rugby World Cup Japan 2019</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <footer class="modal-card-foot">
+                </footer>
+            </div>
+        </div>
+      
+        
+    
+    
+    
+  
+
+<script type="text/javascript" src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
 </body>
+
+
 
 </html>
